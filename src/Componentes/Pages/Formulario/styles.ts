@@ -5,6 +5,7 @@ export const Title = styled('div')`
         text-align: center;
         color: #000;
         margin-bottom: 50px;
+        margin-top: 200px;
     }
     `;
 

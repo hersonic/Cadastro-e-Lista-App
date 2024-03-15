@@ -1,9 +1,21 @@
 import {styled, Box} from '@mui/system';
 
+export const Header = styled(Box)`
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    position: fixed;
+    border-bottom: 1px solid #000;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px #000;
+`;
+
 export const Container = styled(Box)`
 	background-color: #f0f0f0;
     width: 100%;
-    padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
