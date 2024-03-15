@@ -3,7 +3,8 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { render } from "react-dom";
 import Home from "./Componentes/Pages/Home";
 import Formulario from "./Componentes/Pages/Formulario";
-import Lista from "./Componentes/Pages/ToDoList";
+import ToDoList from "./Componentes/Pages/ToDoList";
+import Global from "./Styles/global";
 import NavBar from "./Componentes/Pages/NavBar";
 export default class App extends React.Component {
 	render() {
@@ -11,6 +12,7 @@ export default class App extends React.Component {
 			<Router>
 				<div>
 					<nav>
+						<Global />
 						<NavBar />
 					</nav>
 				</div>
@@ -25,7 +27,7 @@ export default class App extends React.Component {
 					/>
 					<Route
 						path="/TodoDoList"
-						Component={Lista}
+						Component={ToDoList}
 					/>
 				</Routes>
 			</Router>
